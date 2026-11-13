@@ -31,6 +31,9 @@ svg.logo,svg.icon{display:block}
 .nav-group a{display:block;padding:6px 12px;margin:0 -12px;border-radius:15px;text-decoration:none;font-size:14px;color:var(--muted);transition:background .2s,color .2s}
 .nav-group a:hover{color:var(--ink);background:rgba(227,255,251,.06)}
 .nav-group a.active{color:var(--bg-deep);background:var(--accent);font-weight:500}
+.nav-group a.nav-head{font-size:12px;font-weight:600;color:var(--accent);letter-spacing:-.01em;padding:6px 12px}
+.nav-group a.nav-head:hover{color:var(--ink)}
+.nav-group a.nav-head.active{color:var(--bg-deep)}
 .nav .foot{margin-top:auto;font-size:12px;color:var(--muted)}
 .menu-btn{display:none}
 /* ---------- layout ---------- */
@@ -260,8 +263,7 @@ section{padding:88px 22px}
 <div class="nav-group"><h4>Identity</h4>
 <a href="#color">Color Palette</a><a href="#typography">Typography</a><a href="#type-rules">Typography Rules</a><a href="#radius">Corner Radius</a>
 </div>
-<div class="nav-group"><h4>Brand Character</h4>
-<a href="#jenny">Jenny</a>
+<div class="nav-group"><a class="nav-head" href="#jenny">Jenny</a>
 </div>
 <div class="nav-group"><h4>Resources</h4>
 <a href="#downloads">Downloads</a>
