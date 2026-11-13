@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Package.ai — Brand Guidelines</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="105 130 136 150"%3E%3Cpath fill="%2339E5D0" d="M125.47,272.56l-1.24,1.24c-1.52,1.52-3.85,2.04-5.79,1.11-1.8-.86-2.86-2.63-2.86-4.52v-81.19c0-1.32.53-2.59,1.46-3.53l9.16-9.16c1.52-1.52,3.85-2.04,5.79-1.12,1.8.86,2.86,2.63,2.86,4.52v49.5c0,2.76,2.24,4.99,4.99,4.99h49.51c2.97,0,5.33,2.59,4.96,5.63-.14,1.16-.74,2.21-1.56,3.03l-9.15,9.15c-.94.94-2.21,1.46-3.53,1.46h-33.62c-1.32,0-2.59.53-3.53,1.46l-17.44,17.41Z"/%3E%3Cpath fill="%2339E5D0" d="M226.16,137.69h-59.49c-1.33,0-2.6.53-3.53,1.46l-19.62,19.63c-.7.7-1.24,1.57-1.44,2.54-.68,3.23,1.77,6.08,4.88,6.08h49.5c2.76,0,4.99,2.24,4.99,4.99v49.5c0,1.97,1.17,3.82,3.11,4.63,1.9.79,4.1.21,5.55-1.24l19.57-19.57c.94-.94,1.46-2.21,1.46-3.53v-59.49c0-2.76-2.24-4.99-4.99-4.99Z"/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+--c-04292f:#04292F; --c-153b3f:#153B3F; --c-005250:#005250; --c-39e5d0:#39E5D0; --c-92feee:#92FEEE;
+--c-cffff8:#CFFFF8; --c-e3fffb:#E3FFFB; --c-f3fffd:#F3FFFD; --c-d8e1e0:#D8E1E0;
+--bg:var(--c-153b3f); --bg-deep:var(--c-04292f); --ink:var(--c-e3fffb); --accent:var(--c-39e5d0);
+--line:rgba(227,255,251,.16); --muted:rgba(227,255,251,.68);
+--nav-w:272px; --chamfer:44px;
+font-family:'Poppins',Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{background:var(--bg);color:var(--ink);font-family:'Poppins',Arial,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+svg.logo,svg.icon{display:block}
+/* ---------- side nav ---------- */
+.nav{position:fixed;inset:0 auto 0 0;width:var(--nav-w);background:var(--bg-deep);border-right:1px solid var(--line);padding:32px 24px calc(24px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:28px;overflow-y:auto;z-index:20}
+.nav .brand{display:flex;flex-direction:column;gap:10px;text-decoration:none}
+.nav .brand svg{width:150px;height:auto;color:var(--ink)}
+.nav .brand span{font-size:12px;color:var(--muted);letter-spacing:-.01em}
+.nav-group h4{font-size:12px;font-weight:600;color:var(--accent);margin-bottom:8px;letter-spacing:-.01em}
+.nav-group a{display:block;padding:6px 12px;margin:0 -12px;border-radius:15px;text-decoration:none;font-size:14px;color:var(--muted);transition:background .2s,color .2s}
+.nav-group a:hover{color:var(--ink);background:rgba(227,255,251,.06)}
+.nav-group a.active{color:var(--bg-deep);background:var(--accent);font-weight:500}
+.nav .foot{margin-top:auto;font-size:12px;color:var(--muted)}
+.menu-btn{display:none}
+/* ---------- layout ---------- */
+main{margin-left:var(--nav-w)}
+section{padding:120px clamp(24px,6vw,96px);border-bottom:1px solid var(--line)}
+.wrap{max-width:1160px}
+.eyebrow{font-weight:600;font-size:15px;letter-spacing:-.01em;color:var(--accent);margin-bottom:14px}
+h1,h2,h3{font-weight:700;letter-spacing:-.02em;line-height:1}
+h2{font-size:clamp(36px,4.4vw,60px);margin-bottom:24px}
+h3{font-size:clamp(22px,2vw,28px);line-height:1.15}
+.lead{font-family:'Inter',Arial,sans-serif;font-size:20px;line-height:1.4;letter-spacing:-.02em;color:var(--muted);max-width:680px}
+p{max-width:68ch}
+.body{font-family:'Inter',Arial,sans-serif;line-height:1.4;letter-spacing:-.02em}
+/* chamfered card (cut top-right corner, as in the guideline) */
+.card{position:relative;background:var(--bg-deep);border-radius:25px;padding:32px;clip-path:polygon(0 0,calc(100% - var(--chamfer)) 0,100% var(--chamfer),100% 100%,0 100%)}
+.card.outline{background:transparent;clip-path:none;border:1px solid var(--line)}
+/* ---------- cover ---------- */
+#cover{min-height:100vh;display:flex;flex-direction:column;justify-content:space-between;padding-top:56px;padding-bottom:48px;background:var(--bg);position:relative;overflow:hidden}
+#cover .top svg{width:200px;color:var(--ink)}
+#cover h1{font-size:clamp(64px,11vw,168px);text-transform:uppercase;line-height:.92;color:var(--ink);letter-spacing:-.02em}
+#cover .meta{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;color:var(--muted);font-size:13px}
+#cover .ghost{position:absolute;right:-6vw;top:50%;transform:translateY(-50%);width:min(52vw,640px);color:var(--accent);opacity:.12;pointer-events:none}
+/* ---------- strategy ---------- */
+.dna{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:0;margin-top:56px}
+.dna .side{border:1px solid var(--line);border-radius:55px;padding:44px 40px;text-align:center}
+.dna .side small{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px}
+.dna .side h3{font-size:34px;margin-bottom:18px}
+.dna .side ul{list-style:none;font-size:15px;color:var(--muted);line-height:1.7}
+.dna .core{width:260px;height:260px;margin:0 -28px;z-index:1;background:var(--bg-deep);border:1px solid var(--line);border-radius:55px;transform:rotate(45deg);display:grid;place-items:center}
+.dna .core>div{transform:rotate(-45deg);text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px;width:220px}
+.dna .core svg{width:160px;color:var(--ink)}
+.dna .core p{font-size:13px;color:var(--muted)}
+.values{display:grid;grid-template-columns:120px repeat(3,1fr);gap:16px;margin-top:48px}
+.values .rowlabel{font-size:12px;font-weight:600;color:var(--muted);padding-top:4px}
+.values .head h3{font-size:30px;margin-bottom:6px}
+.values .head span{font-size:14px;color:var(--muted)}
+.values .cell{font-size:15px;color:var(--muted)}
+.values .cell.feel{color:var(--ink);font-weight:600}
+.values .col{display:contents}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.value{display:flex;flex-direction:column;gap:22px}
+.value .row small{display:block;font-size:12px;font-weight:600;color:var(--accent);margin-bottom:6px}
+.value .row p{font-size:15px;color:var(--muted)}
+.value .row.feel p{color:var(--ink);font-weight:600}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.why .card h3{font-size:40px;margin-bottom:18px;color:var(--accent)}
+.why .card p{font-size:15px;color:var(--muted)}
+.why .card p strong{color:var(--ink);font-weight:600;display:block;margin-bottom:10px;font-size:17px}
+.rtb{margin-top:48px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rtb .col-h{padding:0 4px 8px}
+.rtb .col-h h3{font-size:26px}
+.rtb .col-h span{font-size:14px;color:var(--muted)}
+.rtb .card{padding:26px 28px}
+.rtb .card strong{display:block;font-size:17px;margin-bottom:6px}
+.rtb .card p{font-size:14px;color:var(--muted)}
+.rtb .col{display:flex;flex-direction:column;gap:16px}
+.note{margin-top:28px;font-size:15px;color:var(--muted)}
+.story{font-size:clamp(22px,2.4vw,32px);line-height:1.35;font-weight:500;letter-spacing:-.02em;max-width:900px}
+.story em{font-style:normal;color:var(--accent)}
+.lang{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:48px}
+.lang .card small{display:block;font-size:13px;color:var(--accent);font-weight:600;margin-bottom:10px}
+.lang .card h3{font-size:30px;margin-bottom:6px}
+.lang .card .role{font-weight:600;margin-bottom:12px;font-size:15px}
+.lang .card p{font-size:14px;color:var(--muted)}
+.vdm{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.vdm .card.outline small{display:block;color:var(--accent);font-weight:600;font-size:13px;margin-bottom:8px}
+.vdm .card.outline p{font-size:17px;font-weight:500}
+/* ---------- icon story ---------- */
+.sub{font-size:clamp(24px,2.4vw,34px);margin:40px 0 24px}
+.evolve,.built{border:1px solid var(--line);border-radius:25px;padding:48px;display:grid;place-items:center}
+.evolve svg{width:min(100%,760px);height:auto}
+.built svg{width:min(60%,260px);height:auto}
+.story-icon{margin-top:28px}
+.pairs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:0}
+.pair{border:1px solid var(--line);border-radius:25px;padding:28px;display:grid;place-items:center}
+.pair svg{width:100%;max-width:280px;height:auto}
+.pair .lbl{font:500 50px Poppins,Arial,sans-serif;fill:#E3FFFB}
+.logo-row{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;margin-top:48px}
+.tile{border:1px solid var(--line);border-radius:25px;display:grid;place-items:center;padding:56px 40px;min-height:260px;position:relative}
+.tile svg{color:var(--ink)}
+.tile.light{background:var(--c-e3fffb);border-color:transparent}
+.tile.light svg{color:var(--c-153b3f)}
+.tile.std svg{color:var(--accent)}
+.tile .cap{position:absolute;left:20px;bottom:-30px;font-size:13px;color:var(--muted)}
+.logo-row .tile svg.logo{width:min(100%,420px)}
+.logo-row .tile svg.alt{width:min(100%,260px)}
+.icon-solo{margin-top:72px}
+.icon-solo .tile{min-height:340px}
+.icon-solo .tile svg{width:140px}
+.colors-3{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:48px}
+.spec{display:flex;gap:16px;margin-top:20px;align-items:flex-start}
+.spec i{width:44px;height:44px;border-radius:12px;flex:none;border:1px solid var(--line)}
+.spec div{font-size:13px;color:var(--muted);line-height:1.8}
+.usage{font-size:13px;color:var(--muted);margin-top:16px}
+.std-row{display:grid;grid-template-columns:1.6fr .7fr;gap:16px;margin-top:48px}
+.std-row .tile svg.logo{width:min(100%,400px)}
+.std-row .tile svg.icon{width:90px}
+.clear{display:grid;grid-template-columns:.4fr 1fr;gap:16px;margin-top:48px}
+.clear .tile{padding:0;min-height:300px;overflow:hidden}
+.clear .zone{position:relative;padding:var(--u);border:1px dashed rgba(57,229,208,.55)}
+.clear .zone::before{content:"";position:absolute;inset:var(--u);outline:1px solid rgba(227,255,251,.4)}
+.clear .zone .ghosts span{position:absolute;width:var(--u);height:var(--u);display:block;color:var(--c-005250)}
+.clear .zone .ghosts span svg{width:100%;height:100%}
+.clear .zone .g-t{top:0;left:50%;transform:translateX(-50%)}
+.clear .zone .g-b{bottom:0;left:50%;transform:translateX(-50%)}
+.clear .zone .g-l{left:0;top:50%;transform:translateY(-50%)}
+.clear .zone .g-r{right:0;top:50%;transform:translateY(-50%)}
+.clear .zone .ghosts svg{color:var(--c-005250)}
+.clear .zone>svg{position:relative;z-index:1}
+.dont{display:grid;grid-template-columns:1.3fr 1fr;gap:16px;margin-top:48px;align-items:start}
+.dont ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+.dont li{display:flex;gap:12px;font-size:15px;color:var(--muted)}
+.dont li::before{content:"✕";color:var(--accent);font-weight:600;flex:none}
+.dont .samples{display:flex;flex-direction:column;gap:28px;align-items:center;padding:40px}
+.dont .samples svg{width:200px;color:var(--ink)}
+/* ---------- color ---------- */
+.palette{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:48px}
+.swatch{--chamfer:34px;aspect-ratio:1/1.05;border-radius:25px;padding:20px;display:flex;flex-direction:column;justify-content:flex-end;font-size:12px;line-height:1.75;cursor:pointer;border:0;text-align:left;font-family:inherit;clip-path:polygon(0 0,calc(100% - var(--chamfer)) 0,100% var(--chamfer),100% 100%,var(--chamfer) 100%,0 calc(100% - var(--chamfer)));transition:transform .2s}
+.swatch:hover{transform:translateY(-4px)}
+.swatch b{font-size:16px;font-weight:600;margin-top:4px}
+.swatch.dark{color:var(--c-e3fffb)}
+.swatch.lightc{color:var(--c-153b3f)}
+.hint{margin-top:16px;font-size:13px;color:var(--muted)}
+/* ---------- typography ---------- */
+.fonts{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:48px}
+.font{display:flex;flex-direction:column;gap:14px}
+.font .aa{font-size:96px;line-height:1;letter-spacing:-.02em}
+.font h3{font-size:30px}
+.font small{color:var(--accent);font-weight:600;font-size:13px}
+.font p{font-size:14px;color:var(--muted)}
+.font .weights{font-size:14px}
+.font a.dl{margin-top:auto}
+.glyphs{margin-top:48px;display:flex;flex-direction:column;gap:28px}
+.glyphs div small{display:block;color:var(--accent);font-size:13px;font-weight:600;margin-bottom:6px}
+.glyphs div p{font-size:clamp(20px,2.2vw,30px);line-height:1.3;max-width:none;word-break:break-all}
+.rules{display:grid;grid-template-columns:220px 1fr;gap:48px;margin-top:56px;align-items:start}
+.rules dl{display:flex;flex-direction:column;gap:24px}
+.rules dt{font-weight:600;color:var(--accent);font-size:14px}
+.rules dd{font-size:13px;color:var(--muted);line-height:1.6}
+.sample .eb{font-weight:600;letter-spacing:-.01em;font-size:16px;margin-bottom:18px}
+.sample .tt{font-weight:700;font-size:clamp(40px,4.6vw,68px);line-height:1;letter-spacing:-.02em;margin-bottom:28px}
+.sample .pp{font-family:'Inter',Arial,sans-serif;font-size:20px;line-height:1.4;letter-spacing:-.02em;color:var(--muted);max-width:640px;margin-bottom:32px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Poppins',Arial,sans-serif;font-weight:600;font-size:14px;letter-spacing:0;border:1px solid var(--ink);border-radius:15px;padding:10px 18px;text-decoration:none;color:var(--ink);background:transparent;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:var(--ink);color:var(--bg)}
+.btn.solid{background:var(--accent);border-color:var(--accent);color:var(--bg-deep)}
+.btn.solid:hover{background:var(--ink);border-color:var(--ink)}
+.fallback{margin-top:56px}
+.fallback .card{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}
+.fallback .aa{font-family:Arial,sans-serif;font-size:96px;line-height:1}
+/* ---------- radius ---------- */
+.radii{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px;align-items:end}
+.radii .demo{border:1.5px solid var(--accent);background:rgba(57,229,208,.08);height:180px}
+.radii .r15 .demo{border-radius:15px;height:64px}
+.radii .r25 .demo{border-radius:25px}
+.radii .r55 .demo{border-radius:55px;height:240px}
+.radii h3{font-size:34px;color:var(--accent);margin-top:18px}
+.radii p{font-size:14px;color:var(--muted);margin-top:4px}
+/* ---------- downloads ---------- */
+.dl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.dl-card{border:1px solid var(--line);border-radius:25px;overflow:hidden;display:flex;flex-direction:column}
+.dl-card .pv{height:170px;display:grid;place-items:center;padding:28px}
+.dl-card .pv svg{max-width:80%;max-height:100%}
+.dl-card .pv.dark{background:var(--bg-deep)} .dl-card .pv.dark svg{color:var(--c-e3fffb)}
+.dl-card .pv.light{background:var(--c-e3fffb)} .dl-card .pv.light svg{color:var(--c-153b3f)}
+.dl-card .pv.std{background:var(--bg-deep)} .dl-card .pv.std svg{color:var(--accent)}
+.dl-card .meta{padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line)}
+.dl-card .meta b{font-weight:600;font-size:14px}
+.dl-card .meta small{display:block;font-size:12px;color:var(--muted)}
+.dl-card .meta .links{display:flex;gap:6px}
+.dl-card .meta a{font-size:12px;font-weight:600;border:1px solid var(--line);border-radius:15px;padding:6px 11px;text-decoration:none}
+.dl-card .meta a:hover{background:var(--accent);color:var(--bg-deep);border-color:var(--accent)}
+.bundle{margin-top:32px;display:flex;flex-wrap:wrap;gap:12px}
+.dl-asset{margin-top:48px}
+.dl-asset h3{margin-bottom:16px}
+.dl-asset .dl-grid{margin-top:0}
+.dl-card .meta{flex-direction:column;align-items:flex-start}
+.dl-card .meta .links{flex-wrap:wrap}
+footer{padding:48px clamp(24px,6vw,96px);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:13px}
+.toast{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom,0px));left:50%;transform:translate(-50%,20px);background:var(--accent);color:var(--bg-deep);font-weight:600;font-size:14px;padding:10px 18px;border-radius:15px;opacity:0;transition:.25s;z-index:50;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+.palette{grid-template-columns:repeat(3,1fr)}
+.fonts{grid-template-columns:1fr 1fr}
+.dl-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+:root{--nav-w:0px}
+.nav{transform:translateX(-100%);width:280px;transition:transform .3s}
+.nav.open{transform:none;box-shadow:0 0 0 100vmax rgba(4,41,47,.6)}
+.menu-btn{display:grid;place-items:center;position:fixed;top:calc(14px + env(safe-area-inset-top,0px));right:14px;z-index:30;width:46px;height:46px;border-radius:15px;background:var(--accent);color:var(--bg-deep);border:0;font-size:20px;cursor:pointer}
+section{padding:88px 22px}
+.dna{grid-template-columns:1fr;gap:16px}.dna .core{margin:24px auto}
+.values-grid,.why,.rtb,.lang,.vdm,.pairs,.logo-row,.colors-3,.std-row,.clear,.dont,.fonts,.rules,.radii,.dl-grid,.fallback .card{grid-template-columns:1fr}
+.palette{grid-template-columns:repeat(2,1fr)}
+.tile .cap{position:static;margin-top:16px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="logo" viewBox="115 137.3 832.2 153.2"><path d="M326.2,198.48c-3.34,3.05-8.52,4.58-15.56,4.58h-18.87v-35.55h18.87c13.7,0,20.55,5.97,20.55,17.92,0,5.64-1.67,10-4.99,13.05M310.65,157.1h-31.25v96.8h12.38l.26-40.41h18.61c11.3,0,19.67-2.63,25.14-7.92,5.56-5.37,8.33-12.09,8.33-20.13s-2.86-15.14-8.61-20.41c-5.64-5.28-13.93-7.92-24.86-7.92h-.01Z" fill="currentColor"/><path d="M574.8,180.27h-17.05l-28.35,32.64v-55.81h-12.22v96.79h12.22v-32.51l28.89,32.51h16.67l-34.8-36.95,34.66-36.67Z" fill="currentColor"/><path d="M407.24,231.6c-2.25,4.12-5.28,7.3-9.14,9.54-3.76,2.14-7.93,3.22-12.49,3.22s-8.74-1.08-12.49-3.22c-3.76-2.25-6.76-5.43-9-9.54-2.25-4.2-3.35-9.14-3.35-14.78s1.12-10.39,3.35-14.51c2.25-4.12,5.24-7.25,9-9.4,3.76-2.14,7.93-3.23,12.49-3.23s8.74,1.12,12.49,3.35c3.86,2.14,6.89,5.28,9.14,9.4,2.25,4.12,3.35,8.95,3.35,14.51s-1.12,10.43-3.35,14.64h0M410.61,193.72c-2.33-4.2-5.87-7.7-10.61-10.48-4.75-2.78-10.35-4.16-16.8-4.16s-12.49,1.57-17.86,4.71c-5.28,3.14-9.46,7.57-12.49,13.3-3.05,5.64-4.56,12.22-4.56,19.75s1.53,14.06,4.56,19.89c3.05,5.81,7.21,10.35,12.49,13.57,5.28,3.22,11.2,4.84,17.73,4.84s11.92-1.38,16.67-4.16c4.84-2.86,8.46-6.45,10.88-10.75v13.7h12.36v-73.62h-12.36v13.43h-.01Z" fill="currentColor"/><path d="M470.9,189.41c5.37,0,9.86,1.29,13.43,3.9,3.67,2.59,6.13,6.13,7.38,10.61h13.17c-1.88-7.79-5.77-13.89-11.69-18.28-5.83-4.39-13.26-6.58-22.31-6.58-6.98,0-13.21,1.57-18.68,4.71-5.37,3.14-9.59,7.57-12.62,13.3-3.05,5.64-4.56,12.28-4.56,19.89s1.53,14.42,4.56,20.15c3.05,5.73,7.25,10.16,12.62,13.3,5.47,3.14,11.69,4.71,18.68,4.71,8.87,0,16.25-2.25,22.16-6.72,5.91-4.56,9.86-10.61,11.82-18.14h-13.17c-1.34,4.66-3.8,8.25-7.38,10.75-3.58,2.5-8.06,3.76-13.43,3.76-6.98,0-12.62-2.42-16.93-7.25-4.3-4.84-6.45-11.69-6.45-20.55s2.14-15.54,6.45-20.29c4.3-4.84,9.95-7.25,16.93-7.25h.01Z" fill="currentColor"/><path d="M762.42,211.71c.63-6.98,3.09-12.45,7.38-16.39,4.39-3.94,9.67-5.92,15.86-5.92,4.3,0,8.19.89,11.69,2.69,3.58,1.7,6.4,4.26,8.46,7.66,2.06,3.31,3.09,7.3,3.09,11.96h-46.49M804.75,183.63c-5.37-3.05-11.56-4.56-18.54-4.56s-13.53,1.57-19.08,4.71c-5.47,3.05-9.71,7.44-12.77,13.17-3.05,5.73-4.56,12.41-4.56,20.02s1.57,14.33,4.71,20.15c3.14,5.73,7.44,10.16,12.9,13.3,5.55,3.14,11.82,4.71,18.81,4.71,8.78,0,16.12-2.19,22.04-6.58,5.58-4.23,9.38-9.64,11.46-16.19h-13.24c-1.48,3.58-3.83,6.53-7.08,8.79-3.5,2.42-7.89,3.63-13.17,3.63-6.45,0-11.96-2.02-16.52-6.05-4.48-4.12-6.94-9.8-7.38-17.05h58.85c.27-2.59.4-5.07.4-7.38,0-6.72-1.48-12.72-4.43-18.01-2.86-5.37-6.98-9.59-12.36-12.62v-.03Z" fill="currentColor"/><path d="M635.25,231.6c-2.25,4.12-5.28,7.3-9.14,9.54-3.76,2.14-7.93,3.22-12.49,3.22s-8.74-1.08-12.49-3.22c-3.76-2.25-6.76-5.43-9-9.54-2.25-4.2-3.35-9.14-3.35-14.78s1.12-10.39,3.35-14.51c2.25-4.12,5.24-7.25,9-9.4,3.76-2.14,7.93-3.23,12.49-3.23s8.74,1.12,12.49,3.35c3.86,2.14,6.89,5.28,9.14,9.4,2.25,4.12,3.35,8.95,3.35,14.51s-1.12,10.43-3.35,14.64h0M638.62,193.72c-2.33-4.2-5.87-7.7-10.61-10.48-4.75-2.78-10.35-4.16-16.8-4.16s-12.49,1.57-17.86,4.71c-5.28,3.14-9.46,7.57-12.49,13.3-3.05,5.64-4.56,12.22-4.56,19.75s1.53,14.06,4.56,19.89c3.05,5.81,7.21,10.35,12.49,13.57,5.28,3.22,11.2,4.84,17.73,4.84s11.92-1.38,16.67-4.16c4.84-2.86,8.46-6.45,10.88-10.75v13.7h12.36v-73.62h-12.36v13.43h-.01Z" fill="currentColor"/><path d="M939.36,172.14c2.1,0,3.87-.76,5.31-2.27,1.51-1.51,2.27-3.37,2.27-5.55s-.76-4.05-2.27-5.56c-1.44-1.51-3.2-2.27-5.31-2.27s-4.04.76-5.56,2.27c-1.51,1.51-2.27,3.37-2.27,5.56s.76,4.04,2.27,5.55c1.51,1.51,3.37,2.27,5.56,2.27Z" fill="currentColor"/><path d="M933.12,180.27h12.22v73.62h-12.22v-73.62Z" fill="currentColor"/><path d="M900.73,231.6c-2.25,4.12-5.28,7.3-9.14,9.54-3.76,2.14-7.93,3.22-12.49,3.22s-8.74-1.08-12.49-3.22c-3.76-2.25-6.76-5.43-9-9.54-2.25-4.2-3.35-9.14-3.35-14.78s1.12-10.39,3.35-14.51c2.25-4.12,5.24-7.25,9-9.4,3.76-2.14,7.93-3.23,12.49-3.23s8.74,1.12,12.49,3.35c3.86,2.14,6.89,5.28,9.14,9.4,2.25,4.12,3.35,8.95,3.35,14.51s-1.12,10.43-3.35,14.64h0M904.1,193.72c-2.33-4.2-5.87-7.7-10.61-10.48-4.75-2.78-10.35-4.16-16.8-4.16s-12.49,1.57-17.86,4.71c-5.28,3.14-9.46,7.57-12.49,13.3-3.05,5.64-4.56,12.22-4.56,19.75s1.53,14.06,4.56,19.89c3.05,5.81,7.21,10.35,12.49,13.57,5.28,3.22,11.2,4.84,17.73,4.84s11.92-1.38,16.65-4.16c4.84-2.86,8.46-6.45,10.88-10.75v13.7h12.36v-73.62h-12.36v13.43h0Z" fill="currentColor"/><path d="M722.02,231.6c-2.25,4.12-5.28,7.3-9.14,9.54-3.76,2.14-7.93,3.22-12.49,3.22s-8.74-1.08-12.49-3.22c-3.76-2.25-6.76-5.43-9-9.54-2.25-4.2-3.35-9.14-3.35-14.78s1.12-10.39,3.35-14.51c2.25-4.12,5.24-7.25,9-9.4,3.76-2.14,7.93-3.23,12.49-3.23s8.74,1.12,12.49,3.35c3.86,2.14,6.89,5.28,9.14,9.4,2.25,4.12,3.35,8.95,3.35,14.51s-1.12,10.43-3.35,14.64h0M725.37,180.27v13.43c-2.33-4.2-5.92-7.7-10.75-10.48-4.75-2.78-10.3-4.16-16.67-4.16s-12.49,1.57-17.86,4.71c-5.28,3.14-9.46,7.57-12.49,13.3-3.05,5.64-4.56,12.22-4.56,19.75s1.53,14.06,4.56,19.89c3.05,5.81,7.21,10.35,12.49,13.57,5.37,3.22,11.33,4.84,17.86,4.84s11.92-1.44,16.67-4.3c4.75-2.86,8.33-6.45,10.75-10.75v15.44c0,7.61-2.14,13.53-6.45,17.73-4.2,4.2-9.67,6.32-16.39,6.32-5.92,0-10.97-1.38-15.18-4.16-3.84-2.45-6.48-5.66-7.93-9.6h-12.26c1.35,7.34,5.07,13.18,11.2,17.53,6.45,4.56,14.51,6.85,24.18,6.85,7.08,0,13.26-1.48,18.54-4.43,5.37-2.95,9.5-7.08,12.36-12.36,2.86-5.2,4.3-11.16,4.3-17.88v-75.23h-12.36Z" fill="currentColor"/><path d="M832.15,254.78c2.1,0,3.87-.76,5.31-2.27,1.51-1.51,2.27-3.37,2.27-5.55s-.76-4.05-2.27-5.56c-1.44-1.51-3.2-2.27-5.31-2.27s-4.04.76-5.56,2.27c-1.51,1.51-2.27,3.37-2.27,5.56s.76,4.04,2.27,5.55c1.51,1.51,3.37,2.27,5.56,2.27Z" fill="currentColor"/><path d="M125.22,272.56l-1.24,1.24c-1.52,1.52-3.85,2.04-5.79,1.11-1.8-.86-2.86-2.63-2.86-4.52v-81.19c0-1.32.53-2.59,1.46-3.53l9.16-9.16c1.52-1.52,3.85-2.04,5.79-1.12,1.8.86,2.86,2.63,2.86,4.52v49.5c0,2.76,2.24,4.99,4.99,4.99h49.51c2.97,0,5.33,2.59,4.96,5.63-.14,1.16-.74,2.21-1.56,3.03l-9.15,9.15c-.94.94-2.21,1.46-3.53,1.46h-33.62c-1.32,0-2.59.53-3.53,1.46l-17.44,17.41Z" fill="currentColor"/><path d="M225.91,137.69h-59.49c-1.33,0-2.6.53-3.53,1.46l-19.62,19.63c-.7.7-1.24,1.57-1.44,2.54-.68,3.23,1.77,6.08,4.88,6.08h49.5c2.76,0,4.99,2.24,4.99,4.99v49.5c0,1.97,1.17,3.82,3.11,4.63,1.9.79,4.1.21,5.55-1.24l19.57-19.57c.94-.94,1.46-2.21,1.46-3.53v-59.49c0-2.76-2.24-4.99-4.99-4.99Z" fill="currentColor"/></symbol>
+<symbol id="icon" viewBox="115.5 137.5 115.75 138"><path d="M125.47,272.56l-1.24,1.24c-1.52,1.52-3.85,2.04-5.79,1.11-1.8-.86-2.86-2.63-2.86-4.52v-81.19c0-1.32.53-2.59,1.46-3.53l9.16-9.16c1.52-1.52,3.85-2.04,5.79-1.12,1.8.86,2.86,2.63,2.86,4.52v49.5c0,2.76,2.24,4.99,4.99,4.99h49.51c2.97,0,5.33,2.59,4.96,5.63-.14,1.16-.74,2.21-1.56,3.03l-9.15,9.15c-.94.94-2.21,1.46-3.53,1.46h-33.62c-1.32,0-2.59.53-3.53,1.46l-17.44,17.41Z" fill="currentColor"/><path d="M226.16,137.69h-59.49c-1.33,0-2.6.53-3.53,1.46l-19.62,19.63c-.7.7-1.24,1.57-1.44,2.54-.68,3.23,1.77,6.08,4.88,6.08h49.5c2.76,0,4.99,2.24,4.99,4.99v49.5c0,1.97,1.17,3.82,3.11,4.63,1.9.79,4.1.21,5.55-1.24l19.57-19.57c.94-.94,1.46-2.21,1.46-3.53v-59.49c0-2.76-2.24-4.99-4.99-4.99Z" fill="currentColor"/></symbol>
+<symbol id="alt" viewBox="153 182.5 535 339"><path d="M190.79,447.95c-2.67,2.44-6.82,3.66-12.45,3.66h-15.09v-28.44h15.09c10.96,0,16.44,4.78,16.44,14.33,0,4.51-1.34,8-4,10.44M178.36,414.85h-25v77.44h9.9l.21-32.33h14.89c9.04,0,15.74-2.11,20.12-6.33,4.44-4.29,6.67-9.67,6.67-16.11s-2.29-12.11-6.88-16.33c-4.51-4.23-11.15-6.33-19.89-6.33h-.01Z" fill="currentColor"/><path d="M389.67,433.39h-13.64l-22.68,26.11v-44.65h-9.78v77.43h9.78v-26.01l23.11,26.01h13.33l-27.84-29.56,27.73-29.34Z" fill="currentColor"/><path d="M255.63,474.45c-1.8,3.29-4.23,5.84-7.31,7.63-3.01,1.72-6.34,2.58-9.99,2.58s-6.99-.86-9.99-2.58c-3.01-1.8-5.41-4.34-7.2-7.63-1.8-3.36-2.68-7.31-2.68-11.82s.9-8.31,2.68-11.61c1.8-3.29,4.19-5.8,7.2-7.52,3.01-1.72,6.34-2.58,9.99-2.58s6.99.9,9.99,2.68c3.09,1.72,5.52,4.23,7.31,7.52,1.8,3.29,2.68,7.16,2.68,11.61s-.9,8.35-2.68,11.71h0M258.32,444.14c-1.87-3.36-4.7-6.16-8.49-8.38-3.8-2.22-8.28-3.33-13.44-3.33s-9.99,1.26-14.29,3.76c-4.23,2.51-7.56,6.06-9.99,10.64-2.44,4.51-3.65,9.78-3.65,15.8s1.22,11.25,3.65,15.91c2.44,4.65,5.77,8.28,9.99,10.86,4.23,2.58,8.96,3.87,14.19,3.87s9.53-1.11,13.33-3.33c3.87-2.29,6.77-5.16,8.7-8.6v10.96h9.89v-58.89h-9.89v10.74h-.01Z" fill="currentColor"/><path d="M306.55,440.7c4.3,0,7.89,1.04,10.74,3.12,2.94,2.07,4.91,4.91,5.91,8.49h10.54c-1.51-6.23-4.62-11.11-9.35-14.62-4.66-3.51-10.6-5.26-17.85-5.26-5.58,0-10.57,1.25-14.95,3.76-4.29,2.51-7.67,6.06-10.1,10.64-2.44,4.51-3.65,9.82-3.65,15.91s1.22,11.54,3.65,16.12c2.44,4.58,5.8,8.13,10.1,10.64,4.38,2.51,9.35,3.77,14.95,3.77,7.09,0,13-1.8,17.73-5.38,4.73-3.65,7.89-8.49,9.45-14.51h-10.54c-1.07,3.73-3.04,6.6-5.91,8.6-2.87,2-6.45,3.01-10.74,3.01-5.58,0-10.1-1.93-13.54-5.8-3.44-3.87-5.16-9.35-5.16-16.44s1.72-12.43,5.16-16.23c3.44-3.87,7.96-5.8,13.54-5.8h.01Z" fill="currentColor"/><path d="M539.77,458.54c.51-5.58,2.48-9.96,5.91-13.11,3.51-3.15,7.74-4.73,12.69-4.73,3.44,0,6.55.71,9.35,2.15,2.87,1.36,5.12,3.41,6.77,6.13,1.65,2.65,2.48,5.84,2.48,9.57h-37.19M573.63,436.07c-4.3-2.44-9.25-3.65-14.83-3.65s-10.82,1.26-15.27,3.77c-4.37,2.44-7.77,5.95-10.21,10.54-2.44,4.58-3.65,9.92-3.65,16.02s1.26,11.47,3.77,16.12c2.51,4.58,5.95,8.13,10.32,10.64,4.44,2.51,9.45,3.76,15.05,3.76,7.02,0,12.9-1.75,17.63-5.26,4.47-3.38,7.51-7.71,9.17-12.95h-10.59c-1.19,2.87-3.06,5.23-5.66,7.04-2.8,1.93-6.31,2.9-10.54,2.9-5.16,0-9.57-1.61-13.22-4.84-3.58-3.29-5.55-7.84-5.91-13.64h47.08c.22-2.07.32-4.05.32-5.91,0-5.38-1.19-10.18-3.55-14.4-2.29-4.29-5.58-7.67-9.89-10.1v-.02Z" fill="currentColor"/><path d="M438.03,474.45c-1.8,3.29-4.23,5.84-7.31,7.63-3,1.72-6.34,2.58-9.99,2.58s-6.99-.86-9.99-2.58c-3.01-1.8-5.41-4.34-7.2-7.63-1.8-3.36-2.68-7.31-2.68-11.82s.9-8.31,2.68-11.61c1.8-3.29,4.19-5.8,7.2-7.52,3.01-1.72,6.34-2.58,9.99-2.58s6.99.9,9.99,2.68c3.09,1.72,5.52,4.23,7.31,7.52,1.8,3.29,2.68,7.16,2.68,11.61s-.9,8.35-2.68,11.71h0M440.73,444.14c-1.87-3.36-4.7-6.16-8.49-8.38-3.8-2.22-8.28-3.33-13.44-3.33s-9.99,1.26-14.29,3.76c-4.23,2.51-7.56,6.06-9.99,10.64-2.44,4.51-3.65,9.78-3.65,15.8s1.22,11.25,3.65,15.91c2.44,4.65,5.77,8.28,9.99,10.86,4.23,2.58,8.96,3.87,14.19,3.87s9.53-1.11,13.33-3.33c3.87-2.29,6.77-5.16,8.7-8.6v10.96h9.89v-58.89h-9.89v10.74h-.01Z" fill="currentColor"/><path d="M681.32,426.88c1.68,0,3.1-.61,4.25-1.82,1.21-1.21,1.82-2.7,1.82-4.44s-.61-3.24-1.82-4.44c-1.15-1.21-2.56-1.82-4.25-1.82s-3.24.61-4.44,1.82c-1.21,1.21-1.82,2.69-1.82,4.44s.61,3.24,1.82,4.44c1.21,1.21,2.69,1.82,4.44,1.82Z" fill="currentColor"/><path d="M676.32,433.39h9.78v58.89h-9.78v-58.89Z" fill="currentColor"/><path d="M650.42,474.45c-1.8,3.29-4.23,5.84-7.31,7.63-3.01,1.72-6.34,2.58-9.99,2.58s-6.99-.86-9.99-2.58c-3-1.8-5.41-4.34-7.2-7.63-1.8-3.36-2.68-7.31-2.68-11.82s.9-8.31,2.68-11.61c1.8-3.29,4.19-5.8,7.2-7.52,3.01-1.72,6.34-2.58,9.99-2.58s6.99.9,9.99,2.68c3.09,1.72,5.52,4.23,7.31,7.52,1.8,3.29,2.68,7.16,2.68,11.61s-.9,8.35-2.68,11.71h0M653.11,444.14c-1.87-3.36-4.7-6.16-8.49-8.38-3.8-2.22-8.28-3.33-13.44-3.33s-9.99,1.26-14.29,3.76c-4.23,2.51-7.56,6.06-9.99,10.64-2.44,4.51-3.65,9.78-3.65,15.8s1.22,11.25,3.65,15.91c2.44,4.65,5.77,8.28,9.99,10.86,4.23,2.58,8.96,3.87,14.19,3.87s9.53-1.11,13.32-3.33c3.87-2.29,6.77-5.16,8.7-8.6v10.96h9.89v-58.89h-9.89v10.74h0Z" fill="currentColor"/><path d="M507.45,474.45c-1.8,3.29-4.23,5.84-7.31,7.63-3.01,1.72-6.34,2.58-9.99,2.58s-6.99-.86-9.99-2.58c-3-1.8-5.41-4.34-7.2-7.63-1.8-3.36-2.68-7.31-2.68-11.82s.9-8.31,2.68-11.61c1.8-3.29,4.19-5.8,7.2-7.52,3.01-1.72,6.34-2.58,9.99-2.58s6.99.9,9.99,2.68c3.09,1.72,5.52,4.23,7.31,7.52,1.8,3.29,2.68,7.16,2.68,11.61s-.9,8.35-2.68,11.71h0M510.13,433.39v10.74c-1.87-3.36-4.73-6.16-8.6-8.38-3.8-2.22-8.24-3.33-13.33-3.33s-9.99,1.26-14.29,3.76c-4.23,2.51-7.56,6.06-9.99,10.64-2.44,4.51-3.65,9.78-3.65,15.8s1.22,11.25,3.65,15.91c2.44,4.65,5.77,8.28,9.99,10.86,4.3,2.58,9.06,3.87,14.29,3.87s9.53-1.15,13.33-3.44c3.8-2.29,6.67-5.16,8.6-8.6v12.35c0,6.09-1.72,10.82-5.16,14.19-3.36,3.36-7.74,5.05-13.11,5.05-4.73,0-8.77-1.1-12.15-3.33-3.07-1.96-5.18-4.53-6.34-7.68h-9.81c1.08,5.87,4.05,10.55,8.96,14.02,5.16,3.65,11.61,5.48,19.34,5.48,5.66,0,10.6-1.19,14.83-3.55,4.29-2.36,7.6-5.67,9.89-9.89,2.29-4.16,3.44-8.92,3.44-14.3v-60.18h-9.89Z" fill="currentColor"/><path d="M595.55,493c1.68,0,3.1-.61,4.25-1.82,1.21-1.21,1.82-2.7,1.82-4.44s-.61-3.24-1.82-4.44c-1.15-1.21-2.56-1.82-4.25-1.82s-3.24.61-4.44,1.82c-1.21,1.21-1.82,2.69-1.82,4.44s.61,3.24,1.82,4.44c1.21,1.21,2.69,1.82,4.44,1.82Z" fill="currentColor"/><path d="M356.82,361.66l-1.64,1.64c-2.02,2.02-5.11,2.71-7.68,1.48-2.38-1.14-3.8-3.5-3.8-6v-107.73c0-1.76.7-3.44,1.94-4.69l12.16-12.16c2.02-2.02,5.11-2.71,7.68-1.48,2.38,1.14,3.8,3.5,3.8,6v65.69c0,3.66,2.97,6.63,6.63,6.63h65.69c3.94,0,7.08,3.44,6.58,7.48-.19,1.53-.98,2.93-2.08,4.02l-12.15,12.15c-1.24,1.24-2.93,1.94-4.68,1.94h-44.61c-1.76,0-3.44.7-4.69,1.94l-23.15,23.1Z" fill="currentColor"/><path d="M490.43,182.7h-78.94c-1.76,0-3.44.7-4.69,1.94l-26.04,26.04c-.93.93-1.64,2.08-1.91,3.37-.9,4.29,2.35,8.07,6.48,8.07h65.69c3.66,0,6.63,2.97,6.63,6.63v65.69c0,2.62,1.55,5.07,4.13,6.15,2.52,1.05,5.44.28,7.37-1.65l25.97-25.97c1.24-1.24,1.94-2.93,1.94-4.69v-78.94c0-3.66-2.97-6.63-6.63-6.63Z" fill="currentColor"/></symbol>
+</svg>
+<button class="menu-btn" aria-label="Open menu" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+<nav class="nav" aria-label="Guideline sections">
+<a class="brand" href="#cover"><svg class="logo" viewBox="0 0 832.2 153.2" role="img" aria-label="Package.ai"><use href="#logo"/></svg><span>Brand Guidelines · 2026</span></a>
+<div class="nav-group"><h4>Strategy</h4>
+<a href="#dna">Brand DNA</a><a href="#values">Our Values</a><a href="#why">Start With Why</a><a href="#rtb">Reasons to Believe</a><a href="#story">The Brand Story</a><a href="#language">The Language We Own</a>
+</div>
+<div class="nav-group"><h4>Icon &amp; Logo</h4>
+<a href="#behind-icon">What’s Behind the Icon</a><a href="#logo-versions">Logo Versions</a><a href="#logo-color">Logo Color</a><a href="#clear-space">Clear Space</a><a href="#incorrect">Incorrect Usage</a>
+</div>
+<div class="nav-group"><h4>Identity</h4>
+<a href="#color">Color Palette</a><a href="#typography">Typography</a><a href="#type-rules">Typography Rules</a><a href="#radius">Corner Radius</a>
+</div>
+<div class="nav-group"><h4>Resources</h4>
+<a href="#downloads">Downloads</a>
+</div>
+<div class="foot">©Package.ai 2026</div>
+</nav>
+<main>
+<!-- COVER -->
+<section id="cover">
+<div class="top"><svg class="logo" viewBox="0 0 832.2 153.2" role="img" aria-label="Package.ai"><use href="#logo"/></svg></div>
+<svg class="ghost" viewBox="0 0 115.75 138" aria-hidden="true"><use href="#icon"/></svg>
+<h1>Brand<br>Guidelines</h1>
+<div class="meta"><span>©Package.ai 2026</span><span>Humanizing the last mile</span></div>
+</section>
+<!-- STRATEGY -->
+<section id="dna"><div class="wrap">
+<div class="eyebrow">Strategy</div>
+<h2>Brand DNA: Efficiency Wrapped in Empathy</h2>
+<div class="dna">
+<div class="side"><small>Logistics</small><h3>Efficiency</h3><ul><li>Real-time visibility</li><li>Optimized routing</li><li>Cost per delivery</li><li>Operational intelligence</li></ul></div>
+<div class="core"><div><svg class="logo" viewBox="0 0 832.2 153.2" aria-label="Package.ai"><use href="#logo"/></svg><p>The only platform built at this intersection.</p></div></div>
+<div class="side"><small>Brand</small><h3>Empathy</h3><ul><li>Two-way dialogue</li><li>Customer emotional state</li><li>Engagement &amp; trust</li><li>The human behind the order</li></ul></div>
+</div>
+</div></section>
+<section id="values"><div class="wrap">
+<div class="eyebrow">Strategy</div>
+<h2>Our Values</h2>
+<p class="lead">Not principles on a wall. Decisions in the product.</p>
+<div class="values-grid">
+<div class="card value">
+<div class="head"><h3>Empathy</h3><span>For the customer</span></div>
+<div class="row"><small>We believe</small><p>Every order carries emotional weight. Behind every delivery is a person with a life, a home, and an expectation.</p></div>
+<div class="row"><small>We do</small><p>Two-way dialogue built into every touchpoint. The platform is designed around the customer’s state of mind, not just their address.</p></div>
+<div class="row feel"><small>You feel</small><p>Seen, not processed. Valued, not tracked. A brand that actually understands what this moment means to them.</p></div>
+</div>
+<div class="card value">
+<div class="head"><h3>Efficiency</h3><span>For the operating teams</span></div>
+<div class="row"><small>We believe</small><p>Operational excellence and human experience are not competing priorities. They are the same goal, achieved together.</p></div>
+<div class="row"><small>We do</small><p>Real-time routing intelligence, unified visibility, and optimized dispatch — so every decision is smarter and every mile is intentional.</p></div>
+<div class="row feel"><small>You feel</small><p>In control. No blind spots. A platform that makes the right call faster, reduces cost, and never lets a delay cascade unseen.</p></div>
+</div>
+<div class="card value">
+<div class="head"><h3>Clarity</h3><span>For everyone</span></div>
+<div class="row"><small>We believe</small><p>When people can’t see what’s happening, they assume the worst — and they’re usually right.</p></div>
+<div class="row"><small>We do</small><p>Every party — customer, CX team, ops team — sees the same real-time picture. No information asymmetry. No one flying blind.</p></div>
+<div class="row feel"><small>You feel</small><p>Trust. The kind that turns a first-time buyer into a loyal customer, and a frustrated CX agent into a confident brand ambassador.</p></div>
+</div>
+</div>
+</div></section>
+<section id="why"><div class="wrap">
+<div class="eyebrow">Strategy</div>
+<h2>Start With Why</h2>
+<p class="lead">People don’t buy what you do. They buy why you do it.</p>
+<div class="why">
+<div class="card"><h3>Why</h3><p><strong>Because the last mile is the most human moment in retail.</strong>It’s when a brand promise either becomes real or falls apart in someone’s home. We exist to make sure it becomes real — every time, for every person. Delivery isn’t a logistics problem. It’s a relationship moment.</p></div>
+<div class="card"><h3>How</h3><p><strong>By connecting what was never meant to be separate.</strong>We unify CX and logistics on one real-time platform. We turn one-sided broadcasts into genuine two-way dialogue. We give every party — customer, ops team, CX team — the same live picture. We close the Joy Gap.</p></div>
+<div class="card"><h3>What</h3><p><strong>A purpose-built last-mile platform for big &amp; bulky home delivery.</strong>Scheduled delivery intelligence, real-time visibility, two-way customer communication, and unified CX + ops workflows — built specifically for the complexity of home furnishing and appliance retail.</p></div>
+</div>
+</div></section>
+<section id="rtb"><div class="wrap">
+<div class="eyebrow">Strategy</div>
+<h2>Reasons to Believe</h2>
+<p class="lead">Three levels. One unified conviction.</p>
+<div class="rtb">
+<div class="col">
+<div class="col-h"><h3>Functional</h3><span>What the platform does</span></div>
+<div class="card"><strong>True two-way dialogue</strong><p>Customers can reply, reschedule &amp; ask in real time — not just receive broadcasts.</p></div>
+<div class="card"><strong>Unified CX + Ops view</strong><p>One platform. Both teams see the same real-time picture simultaneously.</p></div>
+<div class="card"><strong>Real-time visibility</strong><p>Live routing intelligence that closes the operational blindspot and reduces cost per delivery.</p></div>
+</div>
+<div class="col">
+<div class="col-h"><h3>Emotional</h3><span>What the customer feels</span></div>
+<div class="card"><strong>From helpless to empowered</strong><p>Customers in control of their delivery feel trust — and trust drives repeat purchase.</p></div>
+<div class="card"><strong>Anxiety replaced by confidence</strong><p>Real answers in real time replace the silence that destroys brand relationships.</p></div>
+<div class="card"><strong>WISMO becomes GILMO</strong><p>The measurable shift: from ‘where is my order?’ to ‘g’d, I love my order.’</p></div>
+</div>
+<div class="col">
+<div class="col-h"><h3>Commercial</h3><span>What the retailer sees</span></div>
+<div class="card"><strong>Lower cost per delivery</strong><p>Better routing, fewer redeliveries, optimized truck utilization.</p></div>
+<div class="card"><strong>Reduced CX call volume</strong><p>Proactive dialogue means fewer inbound complaints and escalations.</p></div>
+<div class="card"><strong>Higher lifetime value</strong><p>Customers who feel seen at delivery come back. Loyalty is built at the door.</p></div>
+</div>
+</div>
+<p class="note">Purpose-built for scheduled, big &amp; bulky home delivery — not adapted for it. That specificity is itself a reason to believe.</p>
+</div></section>
+<section id="story"><div class="wrap">
+<div class="eyebrow">Strategy</div>
+<h2>The Brand Story</h2>
+<p class="story">The most emotionally loaded moment in retail is also the most broken. Not because of bad people. Because of a gap — between CX and logistics, between the brand promise made at checkout and the reality felt at the front door. That gap has a name: <em>The Joy Gap.</em> And it’s costing retailers more than they know — in trust, in loyalty, and in margin. We believe the last mile isn’t where brands lose customers. It’s where they win them for life — if they choose to see the person behind the order.</p>
+</div></section>
+<section id="language"><div class="wrap">
+<div class="eyebrow">Strategy</div>
+<h2>The Language We Own</h2>
+<p class="lead">Four concepts. One consistent voice. The vocabulary that makes Package impossible to ignore.</p>
+<div class="lang">
+<div class="card"><small>The diagnostic framework</small><h3>The Joy Gap™</h3><div class="role">Names the problem.</div><p>The structural distance between the excitement of purchase and the anxiety of delivery. Not caused by bad people — caused by disconnected teams, one-sided communication, and a last mile never built with the customer’s emotional state in mind. Every WISMO call lives in the Joy Gap. Every missed window widens it. Package closes it.</p></div>
+<div class="card"><small>The customer transformation</small><h3>From Helpless to Empowered</h3><div class="role">Shows what changes.</div><p>The customer’s journey when Package is in the room. From receiving broadcasts they can’t respond to, to having a genuine conversation at the most critical moment. From missing a workday with no answers, to knowing exactly what’s happening and feeling in control. Empowerment isn’t a feature. It’s what happens when technology finally sees people.</p></div>
+<div class="card"><small>The operating principle</small><h3>Efficiency Wrapped in Empathy</h3><div class="role">Defines how we work.</div><p>Not a tagline — a way of building. The belief that running a smarter operation and seeing the human behind the order are not competing priorities. They are the same priority. When you optimize for both simultaneously, you don’t just deliver packages. You deliver trust.</p></div>
+<div class="card"><small>The innovative advantage</small><h3>Built as One</h3><div class="role">Shows where it lands.</div><p>The overall technological DNA of the company. The ability to eliminate redundancies, increase efficiency. One brain. One heart. One moment. This is the HOW we do it — affecting radical change across the multiple touchpoints — from brand to business to bottom line.</p></div>
+</div>
+<div class="vdm">
+<div class="card outline"><small>Vision</small><p>We’ve radically reimagined the last mile. Creating long-term customer loyalty, and increasing operational efficiency while we do it.</p></div>
+<div class="card outline"><small>Descriptor</small><p>The only last-mile experience management platform built exclusively for big &amp; bulky delivery.</p></div>
+<div class="card outline"><small>Motto</small><p>Humanizing the last mile</p></div>
+</div>
+</div></section>
+<!-- ICON & LOGO -->
+<section id="behind-icon"><div class="wrap">
+<div class="eyebrow">Icon &amp; Logo</div>
+<h2>What’s Behind the Icon</h2>
+<h3 class="sub">A new form. A stronger connection.</h3>
+<div class="evolve"><svg viewBox="400 360 1140 360" role="img" aria-label="From the original symbol to the new icon">
+<path transform="translate(428 378)" fill-rule="evenodd" d="M0 0H260V253.191V324L183.697 253.191H0V0ZM85.5696 85.4929V167.698H174.43V85.4929H85.5696Z" fill="#E3FFFB"/>
+<path transform="translate(815 562)" d="M0 7.36377V8.36377H297V7.36377V6.36377H0V7.36377ZM297.707 8.07088C298.098 7.68035 298.098 7.04719 297.707 6.65666L291.343 0.292702C290.953 -0.0978227 290.319 -0.0978227 289.929 0.292702C289.538 0.683226 289.538 1.31639 289.929 1.70692L295.586 7.36377L289.929 13.0206C289.538 13.4111 289.538 14.0443 289.929 14.4348C290.319 14.8254 290.953 14.8254 291.343 14.4348L297.707 8.07088Z" fill="#A1FAFE"/>
+<svg x="1239" y="376" width="276" height="329" viewBox="0 0 115.75 138" style="color:#39E5D0"><use href="#icon"/></svg>
+</svg></div>
+<div class="story-icon"><p class="lead">The new symbol retains the inner negative space of the original, while introducing two connecting forms that bring its different parts — and the people they represent — together.<br><br>A clearer directional flow reveals the letter P, linking our name with People. Greater depth and a stronger sense of movement give the symbol a more dynamic, three-dimensional presence.</p></div>
+<h3 class="sub" style="margin-top:96px">Efficiency Wrapped in Empathy</h3>
+<div class="pairs"><div class="pair"><svg viewBox="580 110 780 840" role="img" aria-label="Ops + CX">
+<path transform="translate(591 704)" d="M23.2283 229.389L20.3159 232.303C16.746 235.874 11.2736 237.096 6.71717 234.911C2.48958 232.89 0 228.731 0 224.291V33.5211C0 30.4196 1.24479 27.4355 3.42904 25.2268L24.9428 3.70387C28.5127 0.132377 33.9851 -1.08944 38.5415 1.07225C42.7691 3.09297 45.2587 7.25189 45.2587 11.6928V128.001C45.2587 134.486 50.5197 139.726 56.9785 139.726H173.261C180.236 139.726 185.779 145.812 184.91 152.955C184.581 155.68 183.172 158.147 181.246 160.074L159.756 181.574C157.548 183.782 154.565 185.004 151.465 185.004H72.5031C69.4029 185.004 66.4201 186.249 64.2124 188.435L23.2517 229.342L23.2283 229.389Z" fill="#39E5D0"/>
+<path transform="translate(1135 120)" d="M198.272 0H58.1769C55.0448 0 52.0541 1.24795 49.864 3.43779L3.66003 49.6599C2.01157 51.3081 0.739893 53.3567 0.268905 55.6407C-1.33246 63.2463 4.43716 69.957 11.761 69.957H128.331C134.83 69.957 140.082 75.2315 140.082 81.7068V198.263C140.082 202.901 142.837 207.258 147.406 209.165C151.88 211.025 157.061 209.659 160.476 206.245L206.562 160.164C208.775 157.951 210 154.96 210 151.852V11.7733C210 5.27445 204.725 0.0235337 198.249 0.0235337L198.272 0Z" fill="#39E5D0"/>
+<path transform="translate(825 375)" d="M0 20.718C0.000351422 9.27717 9.27743 0.00147187 20.718 0H248.61C260.051 0 269.327 9.27625 269.328 20.718V248.616C269.326 260.057 260.051 269.334 248.61 269.334H20.718C9.2782 269.333 0.00160079 260.056 0 248.616V20.718Z" fill="#39E5D0"/>
+<rect x="955" y="466" width="9" height="89" rx="4.5" fill="#153B3F"/><rect x="916" y="505.5" width="89" height="9" rx="4.5" fill="#153B3F"/>
+<text x="662" y="790" class="lbl">Ops</text>
+<text x="1237" y="257" text-anchor="end" class="lbl">CX</text></svg></div><div class="pair"><svg viewBox="580 110 780 840" role="img" aria-label="Logistics + Experience">
+<path transform="translate(591 704)" d="M23.2283 229.389L20.3159 232.303C16.746 235.874 11.2736 237.096 6.71717 234.911C2.48958 232.89 0 228.731 0 224.291V33.5211C0 30.4196 1.24479 27.4355 3.42904 25.2268L24.9428 3.70387C28.5127 0.132377 33.9851 -1.08944 38.5415 1.07225C42.7691 3.09297 45.2587 7.25189 45.2587 11.6928V128.001C45.2587 134.486 50.5197 139.726 56.9785 139.726H173.261C180.236 139.726 185.779 145.812 184.91 152.955C184.581 155.68 183.172 158.147 181.246 160.074L159.756 181.574C157.548 183.782 154.565 185.004 151.465 185.004H72.5031C69.4029 185.004 66.4201 186.249 64.2124 188.435L23.2517 229.342L23.2283 229.389Z" fill="#39E5D0"/>
+<path transform="translate(1135 120)" d="M198.272 0H58.1769C55.0448 0 52.0541 1.24795 49.864 3.43779L3.66003 49.6599C2.01157 51.3081 0.739893 53.3567 0.268905 55.6407C-1.33246 63.2463 4.43716 69.957 11.761 69.957H128.331C134.83 69.957 140.082 75.2315 140.082 81.7068V198.263C140.082 202.901 142.837 207.258 147.406 209.165C151.88 211.025 157.061 209.659 160.476 206.245L206.562 160.164C208.775 157.951 210 154.96 210 151.852V11.7733C210 5.27445 204.725 0.0235337 198.249 0.0235337L198.272 0Z" fill="#39E5D0"/>
+<path transform="translate(825 375)" d="M0 20.718C0.000351422 9.27717 9.27743 0.00147187 20.718 0H248.61C260.051 0 269.327 9.27625 269.328 20.718V248.616C269.326 260.057 260.051 269.334 248.61 269.334H20.718C9.2782 269.333 0.00160079 260.056 0 248.616V20.718Z" fill="#39E5D0"/>
+<rect x="955" y="466" width="9" height="89" rx="4.5" fill="#153B3F"/><rect x="916" y="505.5" width="89" height="9" rx="4.5" fill="#153B3F"/>
+<text x="673" y="790" class="lbl">Logistics</text>
+<text x="1237" y="257" text-anchor="end" class="lbl">Experience</text></svg></div><div class="pair"><svg viewBox="580 110 780 840" role="img" aria-label="Brand + Customer">
+<path transform="translate(591 704)" d="M23.2283 229.389L20.3159 232.303C16.746 235.874 11.2736 237.096 6.71717 234.911C2.48958 232.89 0 228.731 0 224.291V33.5211C0 30.4196 1.24479 27.4355 3.42904 25.2268L24.9428 3.70387C28.5127 0.132377 33.9851 -1.08944 38.5415 1.07225C42.7691 3.09297 45.2587 7.25189 45.2587 11.6928V128.001C45.2587 134.486 50.5197 139.726 56.9785 139.726H173.261C180.236 139.726 185.779 145.812 184.91 152.955C184.581 155.68 183.172 158.147 181.246 160.074L159.756 181.574C157.548 183.782 154.565 185.004 151.465 185.004H72.5031C69.4029 185.004 66.4201 186.249 64.2124 188.435L23.2517 229.342L23.2283 229.389Z" fill="#39E5D0"/>
+<path transform="translate(1135 120)" d="M198.272 0H58.1769C55.0448 0 52.0541 1.24795 49.864 3.43779L3.66003 49.6599C2.01157 51.3081 0.739893 53.3567 0.268905 55.6407C-1.33246 63.2463 4.43716 69.957 11.761 69.957H128.331C134.83 69.957 140.082 75.2315 140.082 81.7068V198.263C140.082 202.901 142.837 207.258 147.406 209.165C151.88 211.025 157.061 209.659 160.476 206.245L206.562 160.164C208.775 157.951 210 154.96 210 151.852V11.7733C210 5.27445 204.725 0.0235337 198.249 0.0235337L198.272 0Z" fill="#39E5D0"/>
+<path transform="translate(825 375)" d="M0 20.718C0.000351422 9.27717 9.27743 0.00147187 20.718 0H248.61C260.051 0 269.327 9.27625 269.328 20.718V248.616C269.326 260.057 260.051 269.334 248.61 269.334H20.718C9.2782 269.333 0.00160079 260.056 0 248.616V20.718Z" fill="#39E5D0"/>
+<rect x="955" y="466" width="9" height="89" rx="4.5" fill="#153B3F"/><rect x="916" y="505.5" width="89" height="9" rx="4.5" fill="#153B3F"/>
+<text x="662" y="790" class="lbl">Brand</text>
+<text x="1237" y="257" text-anchor="end" class="lbl">Customer</text></svg></div></div>
+<h3 class="sub" style="margin-top:96px">Built As One</h3>
+<div class="built"><svg viewBox="740 290 440 500" role="img" aria-label="Built as one">
+<g transform="translate(771 315)" fill="none" stroke="#39E5D0" stroke-width="3"><path d="M35.8457 128.224C40.2823 123.787 46.9539 122.234 52.5674 124.608L53.1074 124.851C58.468 127.414 61.6172 132.677 61.6172 138.301V300.442C61.6172 310.313 69.6279 318.288 79.4619 318.288H241.629C250.464 318.288 257.488 325.992 256.386 335.048V335.05C255.976 338.448 254.206 341.592 251.704 344.094L221.734 374.065C218.939 376.861 215.161 378.408 211.232 378.408H101.112C96.3874 378.408 91.8502 380.305 88.4951 383.624L88.4902 383.629L31.3672 440.657L31.1943 440.829L31.1611 440.896L27.2715 444.785C22.6918 449.365 15.7343 450.87 10.0166 448.129H10.0146C4.65154 445.566 1.50016 440.302 1.5 434.677V168.73C1.50007 164.808 3.07582 161.025 5.84863 158.223L5.84766 158.222L35.8457 128.224Z"/><path d="M167.894 1.5H359.068L359.035 1.5332H362.66C370.839 1.5332 377.5 8.16433 377.5 16.3701V211.146C377.5 215.074 375.953 218.849 373.158 221.644L309.077 285.718C304.834 289.96 298.534 291.668 293.066 289.659L292.54 289.453C286.756 287.037 283.28 281.533 283.28 275.68V113.611C283.28 103.781 275.308 95.7734 265.44 95.7734H103.354C94.1044 95.7734 86.8152 87.301 88.8418 77.6758L88.8428 77.6699C89.4258 74.8426 91.0153 72.2452 93.1494 70.1113H93.1504L157.396 5.84082C160.16 3.07682 163.937 1.50001 167.894 1.5Z"/></g>
+<path transform="translate(830 409)" d="M0 17.2308C0.000292278 7.71564 7.71605 0.00122412 17.2312 0H206.769C216.285 0 224 7.71487 224 17.2308V206.769C223.999 216.284 216.284 224 206.769 224H17.2312C7.71669 223.999 0.00133138 216.284 0 206.769V17.2308Z" fill="#39E5D0"/></svg></div>
+</div></section>
+<section id="logo-versions"><div class="wrap">
+<div class="eyebrow">Icon &amp; Logo</div>
+<h2>Logo Versions</h2>
+<p class="lead">Multiple logo versions ensure the mark remains legible and balanced across different contexts and scales.</p>
+<div class="logo-row">
+<div class="tile"><svg class="logo" viewBox="0 0 832.2 153.2"><use href="#logo"/></svg><span class="cap">Main Logo</span></div>
+<div class="tile"><svg class="alt" viewBox="0 0 535 339"><use href="#alt"/></svg><span class="cap">Alt Logo</span></div>
+</div>
+<div class="icon-solo"><div class="tile"><svg class="icon" viewBox="0 0 115.75 138"><use href="#icon"/></svg><span class="cap">Icon</span></div></div>
+</div></section>
+<section id="logo-color"><div class="wrap">
+<div class="eyebrow">Icon &amp; Logo</div>
+<h2>Logo Color</h2>
+<div class="colors-3">
+<div>
+<h3>Negative Color Logo</h3>
+<div class="tile" style="margin-top:20px"><svg class="logo" viewBox="0 0 832.2 153.2" style="width:min(100%,400px)"><use href="#logo"/></svg></div>
+<p class="usage">When using the logo on a dark background, use the light (negative) version in the following colors:</p>
+<div class="spec"><i style="background:#E3FFFB"></i><div>C12 M0 Y6 K0<br>Pantone 656<br>R227 G255 B251<br>#E3FFFB</div></div>
+</div>
+<div>
+<h3>Positive Color Logo</h3>
+<div class="tile light" style="margin-top:20px"><svg class="logo" viewBox="0 0 832.2 153.2" style="width:min(100%,400px)"><use href="#logo"/></svg></div>
+<p class="usage">When using the logo on a light background, use the dark (positive) version in the following colors:</p>
+<div class="spec"><i style="background:#153B3F"></i><div>C88 M53 Y54 K57<br>Pantone 5463<br>R21 G59 B63<br>#153B3F</div></div>
+</div>
+</div>
+<h3 style="margin-top:72px">Standalone Color Logo</h3>
+<div class="std-row">
+<div class="tile std"><svg class="logo" viewBox="0 0 832.2 153.2"><use href="#logo"/></svg></div>
+<div class="tile std"><svg class="icon" viewBox="0 0 115.75 138"><use href="#icon"/></svg></div>
+</div>
+<p class="usage">Standalone color should be reserved for special applications, such as swag, accessories, gifts, website pages and exhibitions.</p>
+<div class="spec"><i style="background:#39E5D0"></i><div>C68 M0 Y38 K0<br>Pantone 3255<br>R57 G229 B208<br>#39E5D0</div></div>
+</div></section>
+<section id="clear-space"><div class="wrap">
+<div class="eyebrow">Icon &amp; Logo</div>
+<h2>Icon &amp; Logo Clear Space</h2>
+<p class="lead">Keep at least one icon height of clear space around the logo or icon, free of text, graphics and other elements.</p>
+<div class="clear">
+<div class="tile"><div class="zone" style="--u:56px"><div class="ghosts"><span class="g-t"><svg viewBox="0 0 115.75 138"><use href="#icon"/></svg></span><span class="g-b"><svg viewBox="0 0 115.75 138"><use href="#icon"/></svg></span><span class="g-l"><svg viewBox="0 0 115.75 138"><use href="#icon"/></svg></span><span class="g-r"><svg viewBox="0 0 115.75 138"><use href="#icon"/></svg></span></div><svg class="icon" viewBox="0 0 115.75 138" style="width:47px;height:56px;color:var(--ink)"><use href="#icon"/></svg></div></div>
+<div class="tile"><div class="zone" style="--u:46px"><div class="ghosts"><span class="g-t"><svg viewBox="0 0 115.75 138"><use href="#icon"/></svg></span><span class="g-b"><svg viewBox="0 0 115.75 138"><use href="#icon"/></svg></span><span class="g-l"><svg viewBox="0 0 115.75 138"><use href="#icon"/></svg></span><span class="g-r"><svg viewBox="0 0 115.75 138"><use href="#icon"/></svg></span></div><svg class="logo" viewBox="0 0 832.2 153.2" style="width:254px;height:auto;color:var(--ink)"><use href="#logo"/></svg></div></div>
+</div>
+</div></section>
+<section id="incorrect"><div class="wrap">
+<div class="eyebrow">Icon &amp; Logo</div>
+<h2>Incorrect Logo Usage</h2>
+<p class="lead">To maintain a consistent brand identity, always use the approved logo files and avoid the following:</p>
+<div class="dont">
+<ul>
+<li><span><b>Do not stretch or distort</b> the logo. Always maintain its original proportions.</span></li>
+<li><span><b>Do not rotate</b> the logo or change its orientation.</span></li>
+<li><span><b>Do not alter the colors</b> or use unapproved color combinations.</span></li>
+<li><span><b>Do not rearrange or resize individual elements</b> of the logo.</span></li>
+<li><span><b>Do not change the typeface</b> or recreate the wordmark.</span></li>
+<li><span><b>Do not add effects</b> such as shadows, gradients, outlines, or glows.</span></li>
+<li><span><b>Do not place the logo on low-contrast backgrounds</b> that reduce its visibility.</span></li>
+<li><span><b>Do not use busy backgrounds</b> that make the logo difficult to read.</span></li>
+<li><span><b>Do not crop or obscure</b> any part of the logo.</span></li>
+<li><span><b>Do not place text or graphics within the clear space</b> around the logo.</span></li>
+<li><span><b>Do not use the standalone color version for everyday applications.</b> Reserve it for special uses, such as swag, accessories, gifts, and exhibitions.</span></li>
+</ul>
+<div class="tile samples" aria-label="Examples of incorrect usage">
+<svg viewBox="0 0 832.2 153.2" style="transform:scaleX(1.35) scaleY(.75)"><use href="#logo"/></svg>
+<svg viewBox="0 0 832.2 153.2" style="transform:rotate(-12deg)"><use href="#logo"/></svg>
+<svg viewBox="0 0 832.2 153.2" style="color:#9be36b"><use href="#logo"/></svg>
+<svg viewBox="0 0 832.2 153.2" style="filter:drop-shadow(0 0 8px #39E5D0)"><use href="#logo"/></svg>
+</div>
+</div>
+</div></section>
+<!-- IDENTITY -->
+<section id="color"><div class="wrap">
+<div class="eyebrow">Identity</div>
+<h2>Color Palette</h2>
+<div class="palette" id="palette"></div>
+<p class="hint">Click a swatch to copy its HEX value.</p>
+</div></section>
+<section id="typography"><div class="wrap">
+<div class="eyebrow">Identity</div>
+<h2>Typography</h2>
+<p class="lead">The typography system prioritizes readability, precision, and calm authority, reflecting the brand’s scientific foundation and practical tone.</p>
+<div class="fonts">
+<div class="card font"><small>Primary</small><div class="aa" style="font-family:Poppins">Aa123</div><h3>Poppins</h3><p>For titles, statements &amp; large size texts</p><div class="weights">Weights used: Light, Regular, Medium, Bold</div><a class="btn dl" href="https://fonts.google.com/specimen/Poppins" target="_blank" rel="noopener">Poppins Font Download ↓</a></div>
+<div class="card font"><small>Secondary</small><div class="aa" style="font-family:Inter">Aa123</div><h3>Inter</h3><p>Website only — for body text, specs &amp; small size texts</p><div class="weights" style="font-family:Inter">Weights used: Light, Medium, Semi Bold</div><a class="btn dl" href="https://fonts.google.com/specimen/Inter" target="_blank" rel="noopener">Inter Font Download ↓</a></div>
+<div class="card font"><small>Fallback</small><div class="aa" style="font-family:Arial">Aa123</div><h3 style="font-family:Arial">Arial</h3><p>When the brand typeface cannot be used due to system or platform limitations, Arial should be used as the fallback font. Maintain the brand’s typographic hierarchy, weights, and spacing as closely as possible to ensure readability and visual consistency.</p><div class="weights" style="font-family:Arial">Weights used: Regular, Bold</div></div>
+</div>
+<div class="glyphs">
+<div><small>Poppins Light</small><p style="font-weight:300">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 .,:;!?'"()/\-–—@#&amp;*+=%$</p></div>
+<div><small>Poppins Medium</small><p style="font-weight:500">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 .,:;!?'"()/\-–—@#&amp;*+=%$</p></div>
+<div><small>Poppins Bold</small><p style="font-weight:700">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 .,:;!?'"()/\-–—@#&amp;*+=%$</p></div>
+</div>
+</div></section>
+<section id="type-rules"><div class="wrap">
+<div class="eyebrow">Identity</div>
+<h2>Typography Examples &amp; Rules</h2>
+<div class="rules">
+<dl>
+<div><dt>Eyebrow</dt><dd>Font: Poppins Semibold<br>Letter spacing: -1%<br>Case: Title case</dd></div>
+<div><dt>Title</dt><dd>Font: Poppins Bold<br>Line height: 100%<br>Letter spacing: -2%<br>Case: Title case</dd></div>
+<div><dt>Paragraph</dt><dd>Font: Inter Regular<br>Line height: 140%<br>Letter spacing: -2%<br>Case: Title case</dd></div>
+<div><dt>Button</dt><dd>Font: Poppins Semibold<br>Letter spacing: 0%<br>Case: Title case</dd></div>
+</dl>
+<div class="sample">
+<div class="eb">The AI in Package.ai</div>
+<div class="tt">Smart enough to listen.<br>Strong enough to act.</div>
+<p class="pp">Using a mix of generative and agentic AI, every customer conversation becomes a proactive dialogue and every input triggers real action.</p>
+<a class="btn" href="#type-rules">Explore the platform →</a>
+</div>
+</div>
+</div></section>
+<section id="radius"><div class="wrap">
+<div class="eyebrow">Identity</div>
+<h2>Corner Radius</h2>
+<div class="radii">
+<div class="r15"><div class="demo"></div><h3>15 px</h3><p>Example: “Impact your business →” button</p></div>
+<div class="r25"><div class="demo"></div><h3>25 px</h3><p>Example: “The Joy Gap” card</p></div>
+<div class="r55"><div class="demo"></div><h3>55 px</h3><p>Example: testimonial card</p></div>
+</div>
+</div></section>
+<!-- DOWNLOADS -->
+<section id="downloads"><div class="wrap">
+<div class="eyebrow">Resources</div>
+<h2>Downloads</h2>
+<p class="lead">Approved logo files. SVG in RGB (screen), CMYK and Pantone (print) versions, and PNG with a transparent background.</p>
+<div id="dlgrid"></div>
+<div class="bundle">
+<a class="btn solid" href="downloads/Package.ai_Brand-Assets.zip" download>Download all assets (.zip) ↓</a>
+<a class="btn" href="downloads/colors/package-ai-tokens.css" download>Color &amp; radius tokens (.css) ↓</a>
+<a class="btn" href="downloads/colors/package-ai-palette.json" download>Palette (.json) ↓</a>
+</div>
+</div></section>
+<footer><span>©Package.ai 2026 — Brand Guidelines</span><span>Humanizing the last mile</span></footer>
+</main>
+<div class="toast" id="toast">Copied</div>
+<script>
+const PALETTE=[
+["#04292F","C96 M63 Y56 K68","309","R4 G41 B47",1],["#153B3F","C88 M53 Y54 K57","5463","R21 G59 B63",1],["#005250","C89 M40 Y57 K42","329","R0 G82 B80",1],
+["#39E5D0","C68 M0 Y38 K0","3255","R57 G229 B208",0],["#92FEEE","C41 M0 Y18 K0","331","R146 G254 B238",0],["#CFFFF8","C21 M0 Y9 K0","317","R207 G255 B248",0],
+["#E3FFFB","C12 M0 Y6 K0","656","R227 G255 B251",0],["#F3FFFD","C5 M0 Y2 K0","—","R243 G255 B253",0],["#D8E1E0","C18 M7 Y13 K0","427","R216 G225 B224",0]];
+const pal=document.getElementById('palette');
+PALETTE.forEach(([hex,cmyk,pms,rgb,dark])=>{
+const b=document.createElement('button');b.className='swatch '+(dark?'dark':'lightc');b.style.background=hex;
+b.innerHTML=`<span>${cmyk}</span><span>Pantone ${pms}</span><span>${rgb}</span><b>${hex}</b>`;
+b.onclick=()=>copy(hex);pal.appendChild(b);
+});
+const toast=document.getElementById('toast');
+function copy(t){(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>show(t+' copied')).catch(()=>show(t))}
+function show(m){toast.textContent=m;toast.classList.add('on');clearTimeout(show.t);show.t=setTimeout(()=>toast.classList.remove('on'),1400)}
+const ASSETS=[["Main-Logo","Main Logo","logo","0 0 832.2 153.2"],["Alt-Logo","Alt Logo","alt","0 0 535 339"],["Icon","Icon","icon","0 0 115.75 138"]];
+const VARS=[["Negative","Negative","dark","PANTONE_656"],["Positive","Positive","light","PANTONE_5463"],["Turquoise","Standalone (Turquoise)","std","PANTONE_3255"]];
+const g=document.getElementById('dlgrid');
+ASSETS.forEach(([file,label,sym,vb])=>{
+const cards=VARS.map(([v,vl,cls,pms])=>{const b=`downloads/${file}/`;const n=`Package.ai_${file}_${v}`;
+return `<div class="dl-card"><div class="pv ${cls}"><svg viewBox="${vb}"><use href="#${sym}"/></svg></div><div class="meta"><div><b>${label}</b><small>${vl}</small></div><div class="links"><a href="${b}PNG/${n}.png" download>PNG</a><a href="${b}SVG/${n}_RGB.svg" download>SVG RGB</a><a href="${b}SVG/${n}_CMYK.svg" download>SVG CMYK</a><a href="${b}SVG/${n}_${pms}.svg" download>SVG Pantone</a></div></div></div>`}).join('');
+g.insertAdjacentHTML('beforeend',`<div class="dl-asset"><h3>${label}</h3><div class="dl-grid">${cards}</div></div>`);
+});
+const links=[...document.querySelectorAll('.nav-group a')];
+const map=new Map(links.map(a=>[a.getAttribute('href').slice(1),a]));
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('active'));const a=map.get(e.target.id);if(a)a.classList.add('active')}})},{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section[id]').forEach(s=>io.observe(s));
+links.forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav').classList.remove('open')));
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+:root {
+  --pk-04292f: #04292F;
+  --pk-153b3f: #153B3F;
+  --pk-005250: #005250;
+  --pk-39e5d0: #39E5D0;
+  --pk-92feee: #92FEEE;
+  --pk-cffff8: #CFFFF8;
+  --pk-e3fffb: #E3FFFB;
+  --pk-f3fffd: #F3FFFD;
+  --pk-d8e1e0: #D8E1E0;
+  --pk-radius-s: 15px;
+  --pk-radius-m: 25px;
+  --pk-radius-l: 55px;
+  --pk-font-primary: 'Poppins', Arial, sans-serif;
+  --pk-font-secondary: 'Inter', Arial, sans-serif;
+}

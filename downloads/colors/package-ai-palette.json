@@ -1,0 +1,56 @@
+[
+  {
+    "hex": "#04292F",
+    "cmyk": "C96 M63 Y56 K68",
+    "pantone": "309",
+    "rgb": "4 41 47"
+  },
+  {
+    "hex": "#153B3F",
+    "cmyk": "C88 M53 Y54 K57",
+    "pantone": "5463",
+    "rgb": "21 59 63"
+  },
+  {
+    "hex": "#005250",
+    "cmyk": "C89 M40 Y57 K42",
+    "pantone": "329",
+    "rgb": "0 82 80"
+  },
+  {
+    "hex": "#39E5D0",
+    "cmyk": "C68 M0 Y38 K0",
+    "pantone": "3255",
+    "rgb": "57 229 208"
+  },
+  {
+    "hex": "#92FEEE",
+    "cmyk": "C41 M0 Y18 K0",
+    "pantone": "331",
+    "rgb": "146 254 238"
+  },
+  {
+    "hex": "#CFFFF8",
+    "cmyk": "C21 M0 Y9 K0",
+    "pantone": "317",
+    "rgb": "207 255 248"
+  },
+  {
+    "hex": "#E3FFFB",
+    "cmyk": "C12 M0 Y6 K0",
+    "pantone": "656",
+    "rgb": "227 255 251"
+  },
+  {
+    "hex": "#F3FFFD",
+    "cmyk": "C5 M0 Y2 K0",
+    "pantone": "\u2014",
+    "rgb": "243 255 253"
+  },
+  {
+    "hex": "#D8E1E0",
+    "cmyk": "C18 M7 Y13 K0",
+    "pantone": "427",
+    "rgb": "216 225 224"
+  }
+]
